@@ -17,6 +17,27 @@ const Info = {
 
 const ProjectInfo = [
   {
+    title: "Entlux E-commerce Store",
+    desc: "Developed a full-featured e-commerce store for a UAE-based client to sell stationeryitems. Integrated Stripe for secure payments and implemented robust state management for efficient data handling. Designed an admin panel/dashboard for seamless productmanagement and order tracking.",
+    image:
+      "enlc.PNG",
+    live: false,
+    technologies: [
+      "Next.js",
+      "Order Management",
+      "Stripe",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Nodemailer",
+      "BCrypt",
+      "RESTful API",
+      "OTP"
+    ],
+    link: "https://entlux.com",
+    github: "https://github.com/mutahir-riaz",
+  },
+  {
     title: "CodeCache",
     desc: "An open-source project built with React, Tailwind CSS, and Firebase.Developed a web application that allows users to securely store and access their code from anywhere. Implemented a responsive and intuitive UI, enabling seamless code management and retrieval.",
     image:
