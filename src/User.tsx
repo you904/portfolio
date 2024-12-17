@@ -21,7 +21,7 @@ const ProjectInfo = [
     desc: "Developed a full-featured e-commerce store for a UAE-based client to sell stationeryitems. Integrated Stripe for secure payments and implemented robust state management for efficient data handling. Designed an admin panel/dashboard for seamless productmanagement and order tracking.",
     image:
       "enlc.PNG",
-    live: false,
+    live: true,
     technologies: [
       "Next.js",
       "antd",
