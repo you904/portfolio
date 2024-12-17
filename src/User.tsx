@@ -24,6 +24,7 @@ const ProjectInfo = [
     live: false,
     technologies: [
       "Next.js",
+      "antd",
       "Order Management",
       "Stripe",
       "MongoDB",
