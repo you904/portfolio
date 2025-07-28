@@ -15,7 +15,17 @@ const Info = {
   bio: "Passionate backend developer skilled in the MERN stack, especially Node.js. I thrive in team projects, focusing on backend work. My goal is to help organizations connect to the internet, driven by a love for problem-solving. Achievements include a lot of projects but specially building a Twitter backend clone and starting an open-source project.",
 };
 
-const ProjectInfo = [
+const ProjectInfo = [{
+    title: "Scaled Solutions Website",
+    desc: "A Website built for Scaled Solutions (Australian Agency) featuring advanced animations, smooth transitions, and 3D visuals.",
+    image: "https://res-console.cloudinary.com/dapp9muys/thumbnails/v1/image/upload/v1753732178/c2NhbGVkX3NvbF96MGtheWs=/drilldown",
+    live: true,
+    technologies: [
+      "Next.js", "GSAP", "Framer Motion", "Three.js"
+    ],
+    link: "https://ventriloc-client.vercel.app/en",
+    github: "https://ventriloc-client.vercel.app/en",
+},
   {
     title: "Entlux E-commerce Store",
     desc: "Developed a full-featured e-commerce store for a UAE-based client to sell stationeryitems. Integrated Stripe for secure payments and implemented robust state management for efficient data handling. Designed an admin panel/dashboard for seamless productmanagement and order tracking.",
@@ -38,44 +48,17 @@ const ProjectInfo = [
     link: "https://entlux.com",
     github: "https://github.com/mutahir-riaz",
   },
-  {
-    title: "CodeCache",
-    desc: "An open-source project built with React, Tailwind CSS, and Firebase.Developed a web application that allows users to securely store and access their code from anywhere. Implemented a responsive and intuitive UI, enabling seamless code management and retrieval.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/fir-react-9e397.appspot.com/o/profile%2Fcodecache.JPG?alt=media&token=c854177f-c69a-47ce-b738-46469c51c291",
-    live: true,
-    technologies: ["React", "Firebase", "Tailwindcss"],
-    link: "https://fir-react-9e397.web.app/",
-    github: "https://github.com/you904/code-cache-opensource",
-  },
-  {
-    title: "Chat App",
-    desc: "This is a modern, real-time chat application built with React, Firebase, and Tailwind CSS. The app allows users to follow and unfollow other users and send direct messages instantly. It features a sleek, responsive design, ensuring a seamless experience across devices. Powered by Firebase, it delivers fast and reliable real-time communication.",
-    image:
-      "chat2.JPG",
+ {
+    title: "BlueOcean Website",
+    desc: "Developed a full-featured e-commerce store for a UAE-based client to sell travel product . it is featuring immersive 3D interactions, smooth animations, and an admin panel.",
+    image: "https://res-console.cloudinary.com/dapp9muys/thumbnails/v1/image/upload/v1753731833/Ym9fampiYmIx/drilldown",
     live: true,
     technologies: [
-      "react",
-      ' firebase',
-      ' material-ui', "chat-application",
-      " formik"," tailwindcss"
+      "Next.js", "Three.js", "GSAP", "Admin Panel"
     ],
-    link: "https://chatapp-beta-gold.vercel.app/",
-    github: "https://github.com/mutahir-riaz/chat-app.git",
-  },
-  {
-    title: "BISE Mirpurkhas website ",
-    desc: "A website clone of BISE mirpur .",
-    image:
-      "bisesite.PNG",
-    live: true,
-    technologies: [
-      "Nextjs","Tailwindcss","shdcn"
-    ],
-    link: "https://bise-mirpur.vercel.app/",
-    github: "https://github.com/you904/BISE_MIRPUR",
-  },
-  {
+    link: "https://blue-ocean-deploy.vercel.app/",
+    github: "https://blue-ocean-deploy.vercel.app/",
+}, {
     title: "Tasty Resturant website ",
     desc: "A Website Built for Tasty Resturant. include a landing page, menu, and About us , reservation form, responsive design.",
     image:
@@ -86,6 +69,16 @@ const ProjectInfo = [
     ],
     link: "https://food-web-beryl.vercel.app/",
     github: "https://food-web-beryl.vercel.app/",
+  },
+  {
+    title: "CodeCache",
+    desc: "An open-source project built with React, Tailwind CSS, and Firebase.Developed a web application that allows users to securely store and access their code from anywhere. Implemented a responsive and intuitive UI, enabling seamless code management and retrieval.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/fir-react-9e397.appspot.com/o/profile%2Fcodecache.JPG?alt=media&token=c854177f-c69a-47ce-b738-46469c51c291",
+    live: true,
+    technologies: ["React", "Firebase", "Tailwindcss"],
+    link: "https://fir-react-9e397.web.app/",
+    github: "https://github.com/you904/code-cache-opensource",
   },
   {
     title: "NewsWeek",
