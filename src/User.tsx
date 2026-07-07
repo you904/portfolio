@@ -23,7 +23,7 @@ const ProjectInfo = [
   {
     title: "Retail Sales Forecasting (10M Dataset)",
     desc: "Built a large-scale forecasting pipeline on a 10M-row dataset. Performed heavy EDA, handled sparsity and outliers, and engineered lag, rolling, and trend features. Applied time-aware validation and backtesting, achieving MAE of 1.05 with stable performance.",
-    image: "retail_ml.jpg",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417757/retail_ml_ebe5ay.jpg",
     live: false,
     technologies: [
       "Python",
@@ -42,7 +42,7 @@ const ProjectInfo = [
   {
     title: "RAG System with Local LLM Optimization",
     desc: "Built a Retrieval-Augmented Generation system using research papers and custom data. Optimized pipeline by chunking, structured extraction, embedding improvements, and context reranking. Reduced response time from 10 minutes to under 10 seconds.",
-    image: "rag_system.png",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417758/rag_system_dtaevw.jpg",
     live: false,
     technologies: [
       "Python",
@@ -60,7 +60,7 @@ const ProjectInfo = [
   {
     title: "Crime Forecasting System (1M+ Records)",
     desc: "Time-series forecasting system built on 1M+ real-world crime records. Performed full data audit, anomaly detection, and feature engineering including lag and seasonal signals. Evaluated using residual analysis and forecasting stability.",
-    image: "crime_ml.png",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417757/crime_ml_fahldl.jpg",
     live: false,
     technologies: [
       "Python",
@@ -78,7 +78,7 @@ const ProjectInfo = [
   {
     title: "Airbnb Occupancy Prediction",
     desc: "End-to-end ML pipeline predicting Airbnb occupancy using real-world data. Included EDA, feature engineering, Random Forest modeling, and SHAP explainability for business insights.",
-    image: "airbnb_ml.png",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417757/airbnb_ml_wv2tfm.jpg",
     live: false,
     technologies: [
       "Python",
@@ -95,7 +95,7 @@ const ProjectInfo = [
   {
     title: "AI vs Human Voice Detection",
     desc: "Deep learning system to classify AI vs human speech using spectrograms, Wav2Vec2 embeddings, CNNs, and LightGBM. Focused on generalization and robustness.",
-    image: "voice_ai.png",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417758/voice_ai_nwh0j1.png",
     live: false,
     technologies: [
       "Python",
@@ -112,7 +112,7 @@ const ProjectInfo = [
   {
     title: "Multi-Human Tracking System",
     desc: "Real-time computer vision system for multi-person detection and tracking using live camera feeds with scalable tracking algorithms.",
-    image: "cv_tracking.png",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417758/cv_tracking_t9ohkj.png",
     live: false,
     technologies: [
       "Python",
@@ -127,7 +127,7 @@ const ProjectInfo = [
   {
     title: "Gracious Global Luxembourg (Charity Platform)",
     desc: "Developed a scalable multi-language charity platform supporting international donations across multiple regions. Implemented secure payment flows, regional adaptability, and strong data privacy practices. Focused on accessibility, performance, and trust-driven user experience for global donors.",
-    image: "Gracious Global.png",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417761/Gracious_Global_dzniyt.png",
     live: true,
     technologies: [
       "Next.js",
@@ -139,13 +139,13 @@ const ProjectInfo = [
       "Data Privacy",
       "API Design"
     ],
-    link: "#",
-    github: "#",
+    link: "http://gracious-world.vercel.app/en/testing-lang",
+    github: "http://gracious-world.vercel.app/en/testing-lang",
   },
   {
     title: "BlueOcean Website (UAE)",
     desc: "Built a full-featured e-commerce platform for a UAE-based travel brand, featuring immersive 3D product interactions using Three.js and GSAP animations. Developed a custom admin panel for product and order management, delivering a visually engaging and high-performance shopping experience.",
-    image: "blueOcean.png",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417757/blueOcean_atwqnd.png",
     live: true,
     technologies: [
       "Next.js",
@@ -157,13 +157,13 @@ const ProjectInfo = [
       "MongoDB",
       "UI/UX"
     ],
-    link: "#",
-    github: "#",
+    link: "https://blue-ocean-deploy.vercel.app/",
+    github: "https://blue-ocean-deploy.vercel.app/",
   },
   {
     title: "World Cargo Services Pakistan",
     desc: "Engineered a web platform for a Pakistan-based cargo company to manage shipments, track deliveries, and streamline logistics operations. Designed intuitive dashboards and optimized workflows for real-time tracking and operational efficiency.",
-    image: "WCS Pakistan.png",
+    image: "https://res.cloudinary.com/dtzqtpq3o/image/upload/v1783417763/WCS_Pakistan_faacyg.png",
     live: true,
     technologies: [
       "React",
@@ -175,8 +175,8 @@ const ProjectInfo = [
       "Authentication",
       "Logistics Systems"
     ],
-    link: "#",
-    github: "#",
+    link: "https://www.wcspakistan.com/",
+    github: "https://www.wcspakistan.com/",
   }
 ];
 
