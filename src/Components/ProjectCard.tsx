@@ -32,13 +32,16 @@ const ProjectCard = (props: any) => {
         radius="lg"
         withBorder
       >
+        
         <Card.Section className="p-3">
-          <Image
-            className="!rounded-xl !shadow-[0_0_5px_0_#64FFDA]"
-            src={props.image}
-            alt={props.image}
-          />
-        </Card.Section>
+  <div className="w-full h-[180px] overflow-hidden rounded-xl">
+    <Image
+      src={props.image}
+      alt={props.image}
+      className="!w-full !h-full object-cover !rounded-xl transition-transform duration-300 hover:scale-105"
+    />
+  </div>
+</Card.Section>
 
         <Group justify="space-between" mt="xs" mb="xs">
           <div className="!text-2xl gap-2 !font-bold !text-white flex items-center sm-mx:!text-xl">

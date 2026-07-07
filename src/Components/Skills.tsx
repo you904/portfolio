@@ -18,32 +18,38 @@ const Skills = () => {
             play={true}
             direction="left"
           >
-            {skillsData.map((skill: string, id: number) => (
-              <div
-                className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
-                key={id}
-              >
-                <div className="h-full w-full rounded-lg border border-primaryColor  shadow-none shadow-gray-50 hover:!scale-[1.02] mb-5 hover:!shadow-[0_0_10px_1px_#64FFDA80]">
-                  <div className="flex -translate-y-[1px] justify-center">
-                    <div className="w-3/4">
-                      <div className="h-[1px] w-full bg-gradient-to-r from-transparent  to-transparent" />
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-3 p-6">
-                    <div className="h-8 sm:h-10">
-                      <img
-                        src={`skills/${skill.toLowerCase()}.svg`}
-                        alt={skill}
-                        width={40}
-                        height={40}
-                        className="h-full w-auto rounded-lg"
-                      />
-                    </div>
-                    <p className="text-white text-sm sm:text-lg">{skill}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+            {skillsData.map((skill, id) => (
+  <div
+    key={id}
+    className="w-36 min-w-fit flex flex-col items-center justify-center m-3 sm:m-5 rounded-lg transition-all duration-500 hover:scale-[1.12] cursor-pointer group"
+  >
+    <div className="w-full rounded-lg border border-primaryColor mb-5 transition-all duration-500 hover:shadow-[0_0_15px_2px_#64FFDA80]">
+      
+      {/* top glow line */}
+      <div className="flex justify-center">
+        <div className="w-3/4 h-[1px] bg-gradient-to-r from-transparent via-primaryColor to-transparent opacity-40 group-hover:opacity-100 transition-all" />
+      </div>
+
+      <div className="flex flex-col items-center justify-center gap-3 p-6">
+        
+        {/* ICON */}
+        <div className="h-10 flex items-center justify-center">
+          <img
+            src={skill.icon}
+            alt={skill.name}
+            className="h-full w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+          />
+        </div>
+
+        {/* TEXT */}
+        <p className="text-white text-sm sm:text-lg text-center">
+          {skill.name}
+        </p>
+
+      </div>
+    </div>
+  </div>
+))}
           </Marquee>
         </div>
       </div>

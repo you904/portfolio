@@ -2,6 +2,7 @@ import { FormEvent, useRef } from "react";
 import { Button, useMatches } from "@mantine/core";
 import { IconArrowRight, IconTopologyStar3 } from "@tabler/icons-react";
 import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 import { db } from "../config/firebase.config.js"; // Import your Firestore configuration
 import { addDoc, collection } from "firebase/firestore";
 
@@ -9,31 +10,37 @@ const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (form.current) {
-      try {
-        // Store the contact data in Firestore
-        const formData = new FormData(form.current);
-        await addDoc(collection(db, "contacts"), {
-          name: formData.get("name"),
-          email: formData.get("email"),
-          phone: formData.get("phone"),
-          message: formData.get("message"),
-        });
+  if (!form.current) {
+    toast.error("Form reference is missing", { duration: 4000 });
+    return;
+  }
 
-        toast.success("Submitted Successfully!", { duration: 4000 });
-        form.current.reset();
-      } catch (error) {
-        console.error("Error submitting form: ", error);
-        toast.error("Failed to send message, please try again", {
-          duration: 4000,
-        });
-      }
-    } else {
-      toast.error("Form reference is missing", { duration: 4000 });
-    }
-  };
+  try {
+    const formData = new FormData(form.current);
+
+    await emailjs.send(
+      "service_sj67km5", // ✅ your service ID
+      "template_xnvaubs", // ⚠️ replace with your template ID
+      {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        message: formData.get("message"),
+      },
+      "OmFSqxcDEpaztEXfN" // ⚠️ replace with your public key
+    );
+
+    toast.success("Message sent successfully!", { duration: 4000 });
+    form.current.reset();
+  } catch (error) {
+    console.error("EmailJS Error:", error);
+    toast.error("Failed to send message, please try again", {
+      duration: 4000,
+    });
+  }
+};
 
   const btn = useMatches({
     xsm: "xs",

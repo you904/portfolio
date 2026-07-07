@@ -8,143 +8,197 @@ import {
 const Info = {
   name: "Syed Mutahir Riaz",
   stack: [
-    "Backend Developer",
-    "Python Programmer",
-    "Open Source founder"
+    "Data Scientist",
+    "AI Engineer",
+    "ML Engineer",
   ],
-  bio: "Passionate backend developer skilled in the MERN stack, especially Node.js. I thrive in team projects, focusing on backend work. My goal is to help organizations connect to the internet, driven by a love for problem-solving. Achievements include a lot of projects but specially building a Twitter backend clone and starting an open-source project.",
+  bio: `
+  I work across the full spectrum of data-driven systems, from raw data to deployable intelligent solutions. I build models that handle diverse data types including structured data, text, images, audio, and video, with a focus on scalability and real-world impact.
+
+My work spans predictive modeling, computer vision, voice analysis, retrieval-based systems, and AI-driven automation. I am comfortable working with large, complex datasets and turning them into actionable intelligence. My goal is to move toward AI research and contribute to building more advanced and capable intelligent systems.
+`,
 };
 
-const ProjectInfo = [{
-    title: "Scaled Solutions Website",
-    desc: "A Website built for Scaled Solutions (Australian Agency) featuring advanced animations, smooth transitions, and 3D visuals.",
-    image: "https://res-console.cloudinary.com/dapp9muys/thumbnails/v1/image/upload/v1753732178/c2NhbGVkX3NvbF96MGtheWs=/drilldown",
-    live: true,
-    technologies: [
-      "Next.js", "GSAP", "Framer Motion", "Three.js"
-    ],
-    link: "https://ventriloc-client.vercel.app/en",
-    github: "https://ventriloc-client.vercel.app/en",
-},
+const ProjectInfo = [
   {
-    title: "Entlux E-commerce Store",
-    desc: "Developed a full-featured e-commerce store for a UAE-based client to sell stationeryitems. Integrated Stripe for secure payments and implemented robust state management for efficient data handling. Designed an admin panel/dashboard for seamless productmanagement and order tracking.",
-    image:
-      "enlc.PNG",
+    title: "Retail Sales Forecasting (10M Dataset)",
+    desc: "Built a large-scale forecasting pipeline on a 10M-row dataset. Performed heavy EDA, handled sparsity and outliers, and engineered lag, rolling, and trend features. Applied time-aware validation and backtesting, achieving MAE of 1.05 with stable performance.",
+    image: "retail_ml.jpg",
+    live: false,
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "XGBoost",
+      "Time Series",
+      "Feature Engineering",
+      "EDA",
+      "Forecasting",
+      "Backtesting"
+    ],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "RAG System with Local LLM Optimization",
+    desc: "Built a Retrieval-Augmented Generation system using research papers and custom data. Optimized pipeline by chunking, structured extraction, embedding improvements, and context reranking. Reduced response time from 10 minutes to under 10 seconds.",
+    image: "rag_system.png",
+    live: false,
+    technologies: [
+      "Python",
+      "LLM",
+      "RAG",
+      "Embeddings",
+      "SQLite",
+      "Vector Search",
+      "Prompt Engineering",
+      "AI Agents"
+    ],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Crime Forecasting System (1M+ Records)",
+    desc: "Time-series forecasting system built on 1M+ real-world crime records. Performed full data audit, anomaly detection, and feature engineering including lag and seasonal signals. Evaluated using residual analysis and forecasting stability.",
+    image: "crime_ml.png",
+    live: false,
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "XGBoost",
+      "Time Series",
+      "Feature Engineering",
+      "EDA"
+    ],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Airbnb Occupancy Prediction",
+    desc: "End-to-end ML pipeline predicting Airbnb occupancy using real-world data. Included EDA, feature engineering, Random Forest modeling, and SHAP explainability for business insights.",
+    image: "airbnb_ml.png",
+    live: false,
+    technologies: [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Random Forest",
+      "EDA",
+      "Feature Engineering",
+      "SHAP"
+    ],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "AI vs Human Voice Detection",
+    desc: "Deep learning system to classify AI vs human speech using spectrograms, Wav2Vec2 embeddings, CNNs, and LightGBM. Focused on generalization and robustness.",
+    image: "voice_ai.png",
+    live: false,
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Wav2Vec2",
+      "CNN",
+      "LightGBM",
+      "Audio Processing"
+    ],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Multi-Human Tracking System",
+    desc: "Real-time computer vision system for multi-person detection and tracking using live camera feeds with scalable tracking algorithms.",
+    image: "cv_tracking.png",
+    live: false,
+    technologies: [
+      "Python",
+      "Computer Vision",
+      "OpenCV",
+      "Object Detection",
+      "Tracking"
+    ],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "Gracious Global Luxembourg (Charity Platform)",
+    desc: "Developed a scalable multi-language charity platform supporting international donations across multiple regions. Implemented secure payment flows, regional adaptability, and strong data privacy practices. Focused on accessibility, performance, and trust-driven user experience for global donors.",
+    image: "Gracious Global.png",
     live: true,
     technologies: [
       "Next.js",
-      "antd",
-      "Order Management",
-      "Stripe",
-      "MongoDB",
-      "Mongoose",
-      "JWT",
-      "Nodemailer",
-      "BCrypt",
-      "RESTful API",
-      "OTP"
-    ],
-    link: "https://entlux.com",
-    github: "https://github.com/mutahir-riaz",
-  },
- {
-    title: "BlueOcean Website",
-    desc: "Developed a full-featured e-commerce store for a UAE-based client to sell travel product . it is featuring immersive 3D interactions, smooth animations, and an admin panel.",
-    image: "https://res-console.cloudinary.com/dapp9muys/thumbnails/v1/image/upload/v1753731833/Ym9fampiYmIx/drilldown",
-    live: true,
-    technologies: [
-      "Next.js", "Three.js", "GSAP", "Admin Panel"
-    ],
-    link: "https://blue-ocean-deploy.vercel.app/",
-    github: "https://blue-ocean-deploy.vercel.app/",
-}, {
-    title: "Tasty Resturant website ",
-    desc: "A Website Built for Tasty Resturant. include a landing page, menu, and About us , reservation form, responsive design.",
-    image:
-      "webdesign.PNG",
-    live: true,
-    technologies: [
-      "Nextjs","Tailwindcss","shdcn","antd"
-    ],
-    link: "https://food-web-beryl.vercel.app/",
-    github: "https://food-web-beryl.vercel.app/",
-  },
-  {
-    title: "CodeCache",
-    desc: "An open-source project built with React, Tailwind CSS, and Firebase.Developed a web application that allows users to securely store and access their code from anywhere. Implemented a responsive and intuitive UI, enabling seamless code management and retrieval.",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/fir-react-9e397.appspot.com/o/profile%2Fcodecache.JPG?alt=media&token=c854177f-c69a-47ce-b738-46469c51c291",
-    live: true,
-    technologies: ["React", "Firebase", "Tailwindcss"],
-    link: "https://fir-react-9e397.web.app/",
-    github: "https://github.com/you904/code-cache-opensource",
-  },
-  {
-    title: "NewsWeek",
-    desc: "Stay informed with a captivating news app built with React and the News API. Explore news by category, enjoy infinite scroll, and experience seamless navigation.",
-    image:
-      "newsweek.PNG",
-    live: false,
-    technologies: [
-      "react","News-api"
-    ],
-    link: "https://github.com/mutahir-riaz/News-Week",
-    github: "https://github.com/mutahir-riaz/News-Week",
-  },
-  {
-    title: "backend-template",
-    desc: "This command-line application simplifies the process of setting up a new backend project by initializing a Node.js project, installing essential packages, and creating a structured folder layout with necessary configuration files.",
-    image:
-      "backendtemp.png",
-    live: false,
-    technologies: ["JavaScript", "Node.js", "Commander"],
-    link: "https://github.com/mutahir-riaz/backend-template",
-    github: "https://github.com/mutahir-riaz/backend-template",
-  },
-  
-  {
-    title: "Twitter",
-    desc: "Backend for a Twitter clone built with Node.js, featuring API routes for user, tweet, and comment management. Implements JWT for secure authentication, role-based access control, and real-time chat with Socket.io. Includes schemas for users, tweets, and comments. Nodemailer handles email verification and OTP-based password resets. Designed for scalability, security, and real-time user interaction.",
-    image:
-      "backendtemp.png",
-    live: false,
-    technologies: [
+      "React",
       "Node.js",
-      "Express.js",
       "MongoDB",
-      "Mongoose",
-      "JWT",
-      "Nodemailer",
-      "BCrypt",
-      "RESTful API",
-      "OTP"
+      "i18n",
+      "Payment Integration",
+      "Data Privacy",
+      "API Design"
     ],
-    link: "https://github.com/mutahir-riaz/Twitter",
-    github: "https://github.com/mutahir-riaz/Twitter",
+    link: "#",
+    github: "#",
   },
-  
-  
+  {
+    title: "BlueOcean Website (UAE)",
+    desc: "Built a full-featured e-commerce platform for a UAE-based travel brand, featuring immersive 3D product interactions using Three.js and GSAP animations. Developed a custom admin panel for product and order management, delivering a visually engaging and high-performance shopping experience.",
+    image: "blueOcean.png",
+    live: true,
+    technologies: [
+      "Next.js",
+      "Three.js",
+      "GSAP",
+      "React",
+      "Admin Panel",
+      "Node.js",
+      "MongoDB",
+      "UI/UX"
+    ],
+    link: "#",
+    github: "#",
+  },
+  {
+    title: "World Cargo Services Pakistan",
+    desc: "Engineered a web platform for a Pakistan-based cargo company to manage shipments, track deliveries, and streamline logistics operations. Designed intuitive dashboards and optimized workflows for real-time tracking and operational efficiency.",
+    image: "WCS Pakistan.png",
+    live: true,
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "REST API",
+      "Dashboard UI",
+      "Authentication",
+      "Logistics Systems"
+    ],
+    link: "#",
+    github: "#",
+  }
 ];
 
 const skillsData = [
-  "HTML",
-  "CSS",
-  "Javascript",
-  "React",
-  "NextJS",
-  "Tailwind",
-  "MongoDB",
-  "Git",
-  "vercel",
-  "Bootstrap",
-  "Firebase",
-  "MaterialUI",
-  "Node",
-  "Express",
-  "Jwt",
-  "Otp",
-  "Zustand"
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Machine Learning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+  { name: "Deep Learning", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+  { name: "NLP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Computer Vision", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
+  { name: "RAG Systems", icon: "https://cdn.simpleicons.org/openai" },
+  { name: "AI Agents", icon: "https://cdn.simpleicons.org/robotframework" },
+  { name: "Data Analysis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+  { name: "Feature Engineering", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+  { name: "Model Training", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" },
+  { name: "Model Deployment", icon: "https://cdn.simpleicons.org/docker" },
+  { name: "MLOps", icon: "https://cdn.simpleicons.org/kubernetes" },
+  { name: "Time Series", icon: "https://cdn.simpleicons.org/plotly" },
+  { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+  { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+  { name: "Scikit-learn", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" },
+  { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+  { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" }
 ];
 
 // AVAILABLE SKILLS
@@ -186,7 +240,7 @@ export const EducationInfo = [
     id: 0,
     img: "uos.png",
     school: "University of Sindh - Jamshoro Sindh",
-    date: "Feb 2024 - Feb 2028",
+    date: "Feb 2024 - Dec 2027",
     desc: "I am currently pursuing a Bachelor of Science in Data Science and Programming at the University of Sindh. With a strong foundation in data analysis, statistical modeling, and programming, I am passionate about leveraging data to drive impactful solutions. My academic journey has equipped me with skills in Python, machine learning technologies. I am eager to apply my knowledge to real-world challenges and continue learning in the dynamic field of data science and Software Development",
     degree: "Bachelor of Science - Data Science and Programming",
   },
