@@ -42,7 +42,7 @@ const ResumeViewer = (props: any) => {
               <ActionIcon
                 className="!text-primaryColor"
                 component="a"
-                href="Resume.pdf"
+                href="resume.pdf"
                 size={btn}
                 download={Info.name}
                 variant="outline"
