@@ -3,8 +3,7 @@ import { Button, useMatches } from "@mantine/core";
 import { IconArrowRight, IconTopologyStar3 } from "@tabler/icons-react";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
-import { db } from "../config/firebase.config.js"; // Import your Firestore configuration
-import { addDoc, collection } from "firebase/firestore";
+
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);

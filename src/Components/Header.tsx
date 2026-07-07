@@ -1,4 +1,4 @@
-import { IconHexagonLetterK, IconHexagonLetterM } from "@tabler/icons-react";
+import {  IconHexagonLetterM } from "@tabler/icons-react";
 import SideBar from "./SideBar";
 import { useMediaQuery } from "@mantine/hooks";
 import { em } from "@mantine/core";

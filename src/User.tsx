@@ -1,9 +1,6 @@
 import {
   IconBrandGithub,
   IconBrandInstagram,
-  IconBrandLeetcode,
-  IconBrandLinkedin,
-  IconBrandYoutube,
 } from "@tabler/icons-react";
 const Info = {
   name: "Syed Mutahir Riaz",
