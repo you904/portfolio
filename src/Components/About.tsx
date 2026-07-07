@@ -51,7 +51,7 @@ const About = () => {
             </Button>
             <Button
               component="a"
-              href="Resume.pdf"
+              href="resume.pdf"
               download={Info.name}
               className="focus-visible:!outline-none !text-primaryColor !w-fit xs-mx:!w-[46%]"
               size={btn}
